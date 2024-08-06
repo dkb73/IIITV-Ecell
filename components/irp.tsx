@@ -6,8 +6,8 @@ import Image from "next/image";
 import ProjectCard from "./projectcard";
 import ProjectModal from "./projectmodal";
 
-const irp = () => {
-  const [projectsToShow, setProjectsToShow] = useState(3);
+const Irp = () => {
+  const [projectsToShow, setProjectsToShow] = React.useState(3);
   const [selectedProject, setSelectedProject] = useState<{
     projectImgSrc: string;
     projectTitle: string;
@@ -36,183 +36,135 @@ const irp = () => {
 
   const projects = [
     {
-      projectImgSrc: '/project1.jpg',
-      projectTitle: 'Project 1',
-      projectDescription: 'A project that addresses a specific industry need.',
-      company: 'Company A',
+      projectImgSrc: "/project1.jpg",
+      projectTitle: "Project 1",
+      projectDescription: "A project that addresses a specific industry need.",
+      company: "Company A",
       students: [
-        { imgSrc: '/project3.jpg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/project2.jpg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
+        { imgSrc: "/project3.jpg", name: "Isha Patel", role: "IRP Lead" },
+        {
+          imgSrc: "/project2.jpg",
+          name: "Arjun Sharma",
+          role: "IRP Associate Lead",
+        },
       ],
     },
     {
-      projectImgSrc: '/project2.jpg',
-      projectTitle: 'Project 2',
-      projectDescription: 'Another project that showcases the capabilities of the IRP wing.',
-      company: 'Company B',
+      projectImgSrc: "/project2.jpg",
+      projectTitle: "Project 2",
+      projectDescription:
+        "Another project that showcases the capabilities of the IRP wing.",
+      company: "Company B",
       students: [
-        { imgSrc: '/project1.jpg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/project2.jpg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
+        { imgSrc: "/project1.jpg", name: "Isha Patel", role: "IRP Lead" },
+        {
+          imgSrc: "/project2.jpg",
+          name: "Arjun Sharma",
+          role: "IRP Associate Lead",
+        },
       ],
     },
     {
-      projectImgSrc: '/project3.jpg',
-      projectTitle: 'Project 3',
-      projectDescription: 'A third project that demonstrates the impact of the IRP wing.',
-      company: 'Company C',
+      projectImgSrc: "/project3.jpg",
+      projectTitle: "Project 3",
+      projectDescription:
+        "A third project that demonstrates the impact of the IRP wing.",
+      company: "Company C",
       students: [
-        { imgSrc: '/placeholder.svg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/placeholder.svg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
+        { imgSrc: "/placeholder.svg", name: "Isha Patel", role: "IRP Lead" },
+        {
+          imgSrc: "/placeholder.svg",
+          name: "Arjun Sharma",
+          role: "IRP Associate Lead",
+        },
       ],
     },
     {
-      projectImgSrc: '/project1.jpg',
-      projectTitle: 'Project 1',
-      projectDescription: 'A project that addresses a specific industry need.',
-      company: 'Company A',
+      projectImgSrc: "/project1.jpg",
+      projectTitle: "Project 1",
+      projectDescription: "A project that addresses a specific industry need.",
+      company: "Company A",
       students: [
-        { imgSrc: '/project3.jpg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/project2.jpg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
+        { imgSrc: "/project3.jpg", name: "Isha Patel", role: "IRP Lead" },
+        {
+          imgSrc: "/project2.jpg",
+          name: "Arjun Sharma",
+          role: "IRP Associate Lead",
+        },
       ],
     },
     {
-      projectImgSrc: '/project2.jpg',
-      projectTitle: 'Project 2',
-      projectDescription: 'Another project that showcases the capabilities of the IRP wing.',
-      company: 'Company B',
+      projectImgSrc: "/project2.jpg",
+      projectTitle: "Project 2",
+      projectDescription:
+        "Another project that showcases the capabilities of the IRP wing.",
+      company: "Company B",
       students: [
-        { imgSrc: '/project1.jpg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/project2.jpg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
+        { imgSrc: "/project1.jpg", name: "Isha Patel", role: "IRP Lead" },
+        {
+          imgSrc: "/project2.jpg",
+          name: "Arjun Sharma",
+          role: "IRP Associate Lead",
+        },
       ],
     },
     {
-      projectImgSrc: '/project3.jpg',
-      projectTitle: 'Project 3',
-      projectDescription: 'A third project that demonstrates the impact of the IRP wing.',
-      company: 'Company C',
+      projectImgSrc: "/project3.jpg",
+      projectTitle: "Project 3",
+      projectDescription:
+        "A third project that demonstrates the impact of the IRP wing.",
+      company: "Company C",
       students: [
-        { imgSrc: '/placeholder.svg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/placeholder.svg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
+        { imgSrc: "/placeholder.svg", name: "Isha Patel", role: "IRP Lead" },
+        {
+          imgSrc: "/placeholder.svg",
+          name: "Arjun Sharma",
+          role: "IRP Associate Lead",
+        },
       ],
     },
     {
-      projectImgSrc: '/project1.jpg',
-      projectTitle: 'Project 1',
-      projectDescription: 'A project that addresses a specific industry need.',
-      company: 'Company A',
+      projectImgSrc: "/project1.jpg",
+      projectTitle: "Project 1",
+      projectDescription: "A project that addresses a specific industry need.",
+      company: "Company A",
       students: [
-        { imgSrc: '/project3.jpg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/project2.jpg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
+        { imgSrc: "/project3.jpg", name: "Isha Patel", role: "IRP Lead" },
+        {
+          imgSrc: "/project2.jpg",
+          name: "Arjun Sharma",
+          role: "IRP Associate Lead",
+        },
       ],
     },
     {
-      projectImgSrc: '/project2.jpg',
-      projectTitle: 'Project 2',
-      projectDescription: 'Another project that showcases the capabilities of the IRP wing.',
-      company: 'Company B',
+      projectImgSrc: "/project2.jpg",
+      projectTitle: "Project 2",
+      projectDescription:
+        "Another project that showcases the capabilities of the IRP wing.",
+      company: "Company B",
       students: [
-        { imgSrc: '/project1.jpg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/project2.jpg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
+        { imgSrc: "/project1.jpg", name: "Isha Patel", role: "IRP Lead" },
+        {
+          imgSrc: "/project2.jpg",
+          name: "Arjun Sharma",
+          role: "IRP Associate Lead",
+        },
       ],
     },
     {
-      projectImgSrc: '/project3.jpg',
-      projectTitle: 'Project 3',
-      projectDescription: 'A third project that demonstrates the impact of the IRP wing.',
-      company: 'Company C',
+      projectImgSrc: "/project3.jpg",
+      projectTitle: "Project 3",
+      projectDescription:
+        "A third project that demonstrates the impact of the IRP wing.",
+      company: "Company C",
       students: [
-        { imgSrc: '/placeholder.svg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/placeholder.svg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
-      ],
-    },
-    {
-      projectImgSrc: '/project1.jpg',
-      projectTitle: 'Project 1',
-      projectDescription: 'A project that addresses a specific industry need.',
-      company: 'Company A',
-      students: [
-        { imgSrc: '/project3.jpg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/project2.jpg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
-      ],
-    },
-    {
-      projectImgSrc: '/project2.jpg',
-      projectTitle: 'Project 2',
-      projectDescription: 'Another project that showcases the capabilities of the IRP wing.',
-      company: 'Company B',
-      students: [
-        { imgSrc: '/project1.jpg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/project2.jpg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
-      ],
-    },
-    {
-      projectImgSrc: '/project3.jpg',
-      projectTitle: 'Project 3',
-      projectDescription: 'A third project that demonstrates the impact of the IRP wing.',
-      company: 'Company C',
-      students: [
-        { imgSrc: '/placeholder.svg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/placeholder.svg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
-      ],
-    },
-    {
-      projectImgSrc: '/project1.jpg',
-      projectTitle: 'Project 1',
-      projectDescription: 'A project that addresses a specific industry need.',
-      company: 'Company A',
-      students: [
-        { imgSrc: '/project3.jpg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/project2.jpg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
-      ],
-    },
-    {
-      projectImgSrc: '/project2.jpg',
-      projectTitle: 'Project 2',
-      projectDescription: 'Another project that showcases the capabilities of the IRP wing.',
-      company: 'Company B',
-      students: [
-        { imgSrc: '/project1.jpg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/project2.jpg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
-      ],
-    },
-    {
-      projectImgSrc: '/project3.jpg',
-      projectTitle: 'Project 3',
-      projectDescription: 'A third project that demonstrates the impact of the IRP wing.',
-      company: 'Company C',
-      students: [
-        { imgSrc: '/placeholder.svg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/placeholder.svg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
-      ],
-    },
-    {
-      projectImgSrc: '/project1.jpg',
-      projectTitle: 'Project 1',
-      projectDescription: 'A project that addresses a specific industry need.',
-      company: 'Company A',
-      students: [
-        { imgSrc: '/project3.jpg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/project2.jpg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
-      ],
-    },
-    {
-      projectImgSrc: '/project2.jpg',
-      projectTitle: 'Project 2',
-      projectDescription: 'Another project that showcases the capabilities of the IRP wing.',
-      company: 'Company B',
-      students: [
-        { imgSrc: '/project1.jpg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/project2.jpg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
-      ],
-    },
-    {
-      projectImgSrc: '/project3.jpg',
-      projectTitle: 'Project 3',
-      projectDescription: 'A third project that demonstrates the impact of the IRP wing.',
-      company: 'Company C',
-      students: [
-        { imgSrc: '/placeholder.svg', name: 'Isha Patel', role: 'IRP Lead' },
-        { imgSrc: '/placeholder.svg', name: 'Arjun Sharma', role: 'IRP Associate Lead' },
+        { imgSrc: "/placeholder.svg", name: "Isha Patel", role: "IRP Lead" },
+        {
+          imgSrc: "/placeholder.svg",
+          name: "Arjun Sharma",
+          role: "IRP Associate Lead",
+        },
       ],
     },
     // Add more projects here
@@ -220,13 +172,25 @@ const irp = () => {
 
   return (
     <section className="bg-muted rounded-lg p-8 shadow-md mt-24 mb-36">
-      <div className="space-y-4 container mx-auto mb-36">
-        <img src="/pushingswing.svg" alt="" className="your-image-class" />
-        <h1 className="text-3xl font-bold">IRP (Industrial and Resource Planning)</h1>
-        <p>
-          The IRP (Industrial and Resource Planning) wing of the Entrepreneurship Cell focuses on bridging the gap
-          between academia and industry. It aims to provide students with real-world exposure and opportunities to
-          work on projects that address the needs of the industry.
+      <div className="space-y-4 container mx-auto mb-36 text-center px-6 md:px-8 lg:px-28">
+        <img
+          src="/pushingswing.svg"
+          alt=""
+          className="your-image-class mx-auto"
+        />
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4">
+          IRP
+          <br />
+          <span className="text-2xl md:text-3xl lg:text-4xl">
+            (Industrial and Resource Planning)
+          </span>
+        </h1>
+        <p className="text-lg md:text-xl lg:text-2xl text-center px-4 md:px-8 lg:px-16 text-justify">
+          The IRP (Industrial and Resource Planning) wing of the
+          Entrepreneurship Cell focuses on bridging the gap between academia and
+          industry. It aims to provide students with real-world exposure and
+          opportunities to work on projects that address the needs of the
+          industry.
         </p>
       </div>
       <div className="mt-8 grid grid-cols-2 gap-8 mb-24">
@@ -260,7 +224,7 @@ const irp = () => {
         </div>
       </div>
       <div>
-        <h2 className="text-2xl font-bold">Top Projects</h2>
+        <h2 className="text-2xl font-bold text-center">Top Projects</h2>
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
           {projects.slice(0, projectsToShow).map((project, index) => (
             <ProjectCard
@@ -280,10 +244,10 @@ const irp = () => {
         )}
       </div>
       <div>
-        <h3 className="text-2xl font-bold">Company Logos</h3>
+        <h3 className="text-2xl font-bold text-center mt-20">Company Logos</h3>
         <div className="mt-4 grid grid-cols-4 gap-4">
           <Image
-            src="/placeholder.svg"
+            src="/irpcompany3.jpg"
             width={100}
             height={50}
             alt="Company Logo"
@@ -291,7 +255,7 @@ const irp = () => {
             style={{ aspectRatio: "100/50", objectFit: "cover" }}
           />
           <Image
-            src="/placeholder.svg"
+            src="/irpcompany4.jpg"
             width={100}
             height={50}
             alt="Company Logo"
@@ -299,7 +263,7 @@ const irp = () => {
             style={{ aspectRatio: "100/50", objectFit: "cover" }}
           />
           <Image
-            src="/placeholder.svg"
+            src="/irpcompany3.jpg"
             width={100}
             height={50}
             alt="Company Logo"
@@ -307,7 +271,7 @@ const irp = () => {
             style={{ aspectRatio: "100/50", objectFit: "cover" }}
           />
           <Image
-            src="/placeholder.svg"
+            src="/irpcompany4.jpg"
             width={100}
             height={50}
             alt="Company Logo"
@@ -331,4 +295,4 @@ const irp = () => {
   );
 };
 
-export default irp;
+export default Irp;

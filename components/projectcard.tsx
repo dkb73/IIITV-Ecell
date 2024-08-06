@@ -17,7 +17,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ projectImgSrc, projectTitle, projectDescription, students, onClick }) => {
   return (
-    <div onClick={onClick} className="bg-background rounded-lg p-6 shadow-md flex flex-col md:flex-row items-start gap-4 cursor-pointer">
+    <div onClick={onClick} className="bg-background rounded-lg p-6 shadow-md flex flex-col md:flex-col items-start gap-4 cursor-pointer">
       <Image src={projectImgSrc} width={200} height={200} alt={projectTitle} className="rounded-lg object-cover" style={{ aspectRatio: "200/200", objectFit: "cover" }} />
       <div className="space-y-2">
         <h4 className="text-lg font-bold">{projectTitle}</h4>

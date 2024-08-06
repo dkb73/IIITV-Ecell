@@ -1,170 +1,136 @@
-import React from 'react'
-import Image from 'next/image'
-const skilldev = () => {
-  return (
-    <section id="skilldevelopment" className="bg-background rounded-lg p-8 text-foreground shadow-md mb-20">
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold">Skill Development</h2>
-              <p>
-                The Skill Development wing of the Entrepreneurship Cell focuses on providing students with the necessary
-                skills and knowledge to succeed in the entrepreneurial ecosystem. It aims to organize workshops,
-                seminars, and training programs to help students develop their entrepreneurial skills.
-              </p>
-            </div>
-            <div className="mt-8 grid grid-cols-2 gap-8">
-              <div className="bg-card rounded-lg p-6 shadow-md text-card-foreground">
-                <Image
-                  src="/profilesample.jpg"
-                  width="200"
-                  height="200"
-                  alt="Skill Development Lead"
-                  className="rounded-full mx-auto"
-                  style={{ aspectRatio: "200/200", objectFit: "cover" }}
-                />
-                <div className="space-y-2 text-center">
-                  <h3 className="text-xl font-bold">Riya Mehta</h3>
-                  <p className="text-card-foreground">Skill Development Lead</p>
-                  
-                </div>
-              </div>
-              <div className="bg-card rounded-lg p-6 shadow-md text-card-foreground">
-                <Image
-                  src="/profilesample.jpg"
-                  width="200"
-                  height="200"
-                  alt="Skill Development Associate Lead"
-                  className="rounded-full mx-auto"
-                  style={{ aspectRatio: "200/200", objectFit: "cover" }}
-                />
-                <div className="space-y-2 text-center">
-                  <h3 className="text-xl font-bold">Harsh Patel</h3>
-                  <p className="text-card-foreground">Skill Development Associate Lead</p>
-                  
-                </div>
-              </div>
-            </div>
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="flex flex-col items-center justify-center">
-                <Image
-                  src="/eseminar.jpg"
-                  width="400"
-                  height="300"
-                  alt="Skill Development Image 1"
-                  className="rounded-lg object-cover"
-                  style={{ aspectRatio: "400/300", objectFit: "cover" }}
-                />
-                <div className="mt-4 text-center">
-                  <h4 className="text-lg font-bold">Entrepreneurship Seminar</h4>
-                  <p className="text-muted-foreground">
-                    A seminar focused on the fundamentals of entrepreneurship, covering topics such as business
-                    planning, market analysis, and funding.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <Image
-                  src="/startuppitch.jpg"
-                  width="400"
-                  height="300"
-                  alt="Skill Development Image 2"
-                  className="rounded-lg object-cover"
-                  style={{ aspectRatio: "400/300", objectFit: "cover" }}
-                />
-                <div className="mt-4 text-center">
-                  <h4 className="text-lg font-bold">Startup Pitch Competition</h4>
-                  <p className="text-muted-foreground">
-                    A competition where students pitch their startup ideas to a panel of industry experts and investors.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <Image
-                  src="/designworkshop.jpg"
-                  width="400"
-                  height="300"
-                  alt="Skill Development Image 3"
-                  className="rounded-lg object-cover"
-                  style={{ aspectRatio: "400/300", objectFit: "cover" }}
-                />
-                <div className="mt-4 text-center">
-                  <h4 className="text-lg font-bold">Design Thinking Workshop</h4>
-                  <p className="text-muted-foreground">
-                    A hands-on workshop that teaches students the principles of design thinking and how to apply them to
-                    problem-solving.
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-1 md:col-span-3 flex flex-col items-center justify-center">
-                <Image
-                  src="/bootcamp.jpg"
-                  width="800"
-                  height="400"
-                  alt="Skill Development Image 4"
-                  className="rounded-lg object-cover"
-                  style={{ aspectRatio: "800/400", objectFit: "cover" }}
-                />
-                <div className="mt-4 text-center">
-                  <h4 className="text-lg font-bold">Entrepreneurship Bootcamp</h4>
-                  <p className="text-muted-foreground">
-                    A multi-day intensive program that provides students with the knowledge and skills needed to launch
-                    their own startups.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <Image
-                  src="/workshop.jpg"
-                  width="400"
-                  height="300"
-                  alt="Skill Development Image 5"
-                  className="rounded-lg object-cover"
-                  style={{ aspectRatio: "400/300", objectFit: "cover" }}
-                />
-                <div className="mt-4 text-center">
-                  <h4 className="text-lg font-bold">Entrepreneurship Workshop</h4>
-                  <p className="text-muted-foreground">
-                    A workshop that covers various aspects of entrepreneurship, such as business model development,
-                    marketing, and financial planning.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <Image
-                  src="/ideationsession.jpg"
-                  width="400"
-                  height="300"
-                  alt="Skill Development Image 6"
-                  className="rounded-lg object-cover"
-                  style={{ aspectRatio: "400/300", objectFit: "cover" }}
-                />
-                <div className="mt-4 text-center">
-                  <h4 className="text-lg font-bold">Ideation Session</h4>
-                  <p className="text-muted-foreground">
-                    A session where students can brainstorm and develop their business ideas with the guidance of
-                    experienced mentors.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <Image
-                  src="/networking.jpg"
-                  width="400"
-                  height="300"
-                  alt="Skill Development Image 7"
-                  className="rounded-lg object-cover"
-                  style={{ aspectRatio: "400/300", objectFit: "cover" }}
-                />
-                <div className="mt-4 text-center">
-                  <h4 className="text-lg font-bold">Networking Event</h4>
-                  <p className="text-muted-foreground">
-                    An event that connects students with industry professionals, investors, and successful entrepreneurs
-                    to build their network.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-  )
-}
+import React from "react";
+import Image from "next/image";
+import SkillBlock from "./SkillBlock";
 
-export default skilldev
+const skilldev = () => {
+  const skillBlocksData = [
+    {
+      imgSrc: "/eseminar.jpg",
+      imgAlt: "Skill Development Image 1",
+      title: "Entrepreneurship Seminar",
+      description:
+        "A seminar focused on the fundamentals of entrepreneurship, covering topics such as business planning, market analysis, and funding.",
+    },
+    {
+      imgSrc: "/startuppitch.jpg",
+      imgAlt: "Skill Development Image 2",
+      title: "Startup Pitch Competition",
+      description:
+        "A competition where students pitch their startup ideas to a panel of industry experts and investors.",
+    },
+    {
+      imgSrc: "/designworkshop.jpg",
+      imgAlt: "Skill Development Image 3",
+      title: "Design Thinking Workshop",
+      description:
+        "A hands-on workshop that teaches students the principles of design thinking and how to apply them to problem-solving.",
+    },
+    {
+      imgSrc: "/workshop.jpg",
+      imgAlt: "Skill Development Image 5",
+      title: "Entrepreneurship Workshop",
+      description:
+        "A workshop that covers various aspects of entrepreneurship, such as business model development, marketing, and financial planning.",
+    },
+    {
+      imgSrc: "/ideationsession.jpg",
+      imgAlt: "Skill Development Image 6",
+      title: "Ideation Session",
+      description:
+        "A session where students can brainstorm and develop their business ideas with the guidance of experienced mentors.",
+    },
+    {
+      imgSrc: "/networking.jpg",
+      imgAlt: "Skill Development Image 7",
+      title: "Networking Event",
+      description:
+        "An event that connects students with industry professionals, investors, and successful entrepreneurs to build their network.",
+    },
+  ];
+
+  return (
+    <section
+      id="skilldevelopment"
+      className="bg-background rounded-lg p-8 text-foreground shadow-md mb-20 pt-36"
+    >
+      <div className="space-y-4">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-20">
+          Skill Development
+        </h1>
+        <p className="text-lg md:text-xl lg:text-2xl px-4 md:px-8 lg:px-16 text-justify">
+          The Skill Development wing of the Entrepreneurship Cell focuses on
+          providing students with the necessary skills and knowledge to succeed
+          in the entrepreneurial ecosystem. It aims to organize workshops,
+          seminars, and training programs to help students develop their
+          entrepreneurial skills.
+        </p>
+      </div>
+      <div className="mt-8 grid grid-cols-2 gap-4 ">
+        <div className="bg-card rounded-lg p-4 shadow-md text-card-foreground">
+          <Image
+            src="/profilesample.jpg"
+            width="150"
+            height="150"
+            alt="Skill Development Lead"
+            className="rounded-full mx-auto"
+            style={{ aspectRatio: "150/150", objectFit: "cover" }}
+          />
+          <div className="space-y-2 text-center">
+            <h3 className="text-lg font-bold">Riya Mehta</h3>
+            <p className="text-card-foreground">Skill Development Lead</p>
+          </div>
+        </div>
+        <div className="bg-card rounded-lg p-4 shadow-md text-card-foreground">
+          <Image
+            src="/profilesample.jpg"
+            width="150"
+            height="150"
+            alt="Skill Development Associate Lead"
+            className="rounded-full mx-auto"
+            style={{ aspectRatio: "150/150", objectFit: "cover" }}
+          />
+          <div className="space-y-2 text-center">
+            <h3 className="text-lg font-bold">Harsh Patel</h3>
+            <p className="text-card-foreground">
+              Skill Development Associate Lead
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-20 ">
+          Our Initiatives
+        </h1>
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-12">
+        {skillBlocksData.map((block, index) => (
+          <SkillBlock
+            key={index}
+            imgSrc={block.imgSrc}
+            imgAlt={block.imgAlt}
+            title={block.title}
+            description={block.description}
+          />
+        ))}
+        <div className="col-span-1 md:col-span-3 flex flex-col items-center justify-center">
+          <Image
+            src="/bootcamp.jpg"
+            width="800"
+            height="400"
+            alt="Skill Development Image 4"
+            className="rounded-lg object-cover"
+            style={{ aspectRatio: "800/400", objectFit: "cover" }}
+          />
+          <div className="mt-4 text-center">
+            <h4 className="text-lg font-bold">Entrepreneurship Bootcamp</h4>
+            <p className="text-muted-foreground">
+              A multi-day intensive program that provides students with the
+              knowledge and skills needed to launch their own startups.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default skilldev;

@@ -12,7 +12,10 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="home" className="bg-primary py-20 md:py-32 lg:py-40 mb-28 mt-28  border-2 border-gray-100 rounded-lg shadow-lg">
+    <section
+      id="home"
+      className="bg-white py-20 md:py-32 lg:py-40 mb-28 mt-28 rounded-lg shadow-lg"
+    >
       <div className="container mx-auto px-6 md:px-8 lg:px-10 flex flex-col lg:flex-row items-center text-primary-foreground">
         <div className="lg:w-1/2 text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
@@ -22,7 +25,9 @@ const Hero: React.FC = () => {
             The E-Cell is dedicated to fostering a vibrant entrepreneurial
             ecosystem on campus.
           </p>
-          <Button text="Contact Us" />
+          <a href="#contact">
+            <Button text="Contact Us" />
+          </a>
         </div>
         <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
           <Image
