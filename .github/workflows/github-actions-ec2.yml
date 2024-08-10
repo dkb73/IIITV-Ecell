@@ -26,7 +26,7 @@ jobs:
         # - run: mv middleware.js build/
         - run: mv package.json build/
         - run: mv public build/
-        - run: mv next.config.js build/
+        - run: mv next.config.mjs build/
         - run: mv package-lock.json build/
         - run: cd build && ls -a
           env:
