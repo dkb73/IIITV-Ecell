@@ -1,6 +1,3 @@
-import React from 'react'
-
-
 const aboutus = () => {
   return (
     <section id="about" className="bg-background py-20 md:py-32 mb-14 lg:py-40 border-b border-gray-200 ">
@@ -21,17 +18,17 @@ const aboutus = () => {
             <div className="flex items-center justify-center">
               <img
                 src="/ecelllogo.jpg"
-                width={400}
-                height={400}
+                width={450}
+                height={450}
                 alt="E-Cell IIIT Vadodara"
                 className="rounded-lg"
-                style={{ aspectRatio: "400/400", objectFit: "cover" }}
+                style={{ aspectRatio: "450/450", objectFit: "contain", maxWidth: "100%" }}
               />
             </div>
           </div>
         </div>
-      </section>
-  )
-}
+    </section>
+  );
+};
 
-export default aboutus
+export default aboutus;

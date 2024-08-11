@@ -4,9 +4,19 @@ const incubation = () => {
   return (
     <section
       id="incubation"
-      className="bg-accent rounded-lg p-8 text-accent-foreground shadow-md mb-36 pt-36"
+      className="bg-accent rounded-lg p-8 text-accent-foreground shadow-md mb-36 "
     >
       <div className="space-y-4 container mx-auto mb-36 text-center px-6 md:px-8 lg:px-28">
+        <div className="flex justify-center mb-8">
+          <Image
+            src="/incubationheader1framed.jpg"
+            width={700}
+            height={350}
+            alt="SSIP Image"
+            className="rounded-lg"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-10">
           INCUBATION 
         </h1>
@@ -48,21 +58,13 @@ const incubation = () => {
         </div>
       </div>
       <div className="mt-8">
-        <h3 className="text-2xl font-bold">Relevant Images</h3>
+        <h3 className="text-2xl font-bold">Content</h3>
         <div className="mt-4 grid grid-cols-2 gap-4">
           <Image
             src="/incubation1.jpg"
             width="400"
             height="300"
             alt="Incubation Image 1"
-            className="rounded-lg object-cover"
-            style={{ aspectRatio: "400/300", objectFit: "cover" }}
-          />
-          <Image
-            src="/incubation2.jpg"
-            width="400"
-            height="300"
-            alt="Incubation Image 2"
             className="rounded-lg object-cover"
             style={{ aspectRatio: "400/300", objectFit: "cover" }}
           />

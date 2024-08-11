@@ -17,8 +17,8 @@ const Hero: React.FC = () => {
       className="bg-white py-20 md:py-32 lg:py-40 mb-28 mt-28 rounded-lg shadow-lg"
     >
       <div className="container mx-auto px-6 md:px-8 lg:px-10 flex flex-col lg:flex-row items-center text-primary-foreground">
-        <div className="lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+        <div className="lg:w-1/2 text-center lg:text-left" style={{ overflowWrap: 'break-word', lineHeight: '1.5' }}>
+          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-4">
             Empowering Entrepreneurship at IIIT Vadodara
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-8">
@@ -33,10 +33,11 @@ const Hero: React.FC = () => {
           <Image
             src="/herotest1.jpg"
             alt="Entrepreneurship"
-            width={800} // Example width
-            height={600} // Example height
+            width={800}
+            height={600}
             layout="responsive"
             className="w-full h-auto"
+            style={{ objectFit: "contain", maxWidth: "100%" }}
           />
         </div>
       </div>

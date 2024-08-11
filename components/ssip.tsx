@@ -130,9 +130,14 @@ const startups = [
 
 const SSIP = () => {
   const [startupsToShow, setStartupsToShow] = useState(3);
+  const initialStartupsToShow = 3;
 
   const handleViewMoreStartups = () => {
     setStartupsToShow((prev) => prev + 3);
+  };
+
+  const handleViewLessStartups = () => {
+    setStartupsToShow(3);
   };
 
   return (
@@ -143,12 +148,21 @@ const SSIP = () => {
           <br />
           <span className="text-2xl md:text-3xl lg:text-4xl">Student Startup and Innovation Policy</span>
         </h1>
-
         <p className="text-lg md:text-xl lg:text-2xl px-4 md:px-8 lg:px-16 text-justify">
           The SSIP (Student Startup and Innovation Policy) wing of the Entrepreneurship Cell focuses on fostering
           a culture of innovation and entrepreneurship among the students. It aims to provide support and
           resources to students who are interested in starting their own ventures.
         </p>
+        <div className="flex justify-center mb-8">
+          <Image
+            src="/ssipheader1framed.jpg"
+            width={600}
+            height={300}
+            alt="SSIP Image"
+            className="rounded-lg"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
       </div>
       <div className="mt-8 grid grid-cols-2 gap-8">
         <div className="bg-muted rounded-lg p-6">
@@ -184,11 +198,14 @@ const SSIP = () => {
         {startups.slice(0, startupsToShow).map((startup, index) => (
           <StartupCard key={index} startup={startup} />
         ))}
-        {startupsToShow < startups.length && (
-          <div className="mt-8 flex justify-center">
+        <div className="mt-8 flex justify-center space-x-4">
+          {startupsToShow < startups.length && (
             <Button onClick={handleViewMoreStartups}>View More Startups</Button>
-          </div>
-        )}
+          )}
+          {startupsToShow > initialStartupsToShow && (
+            <Button onClick={handleViewLessStartups}>Show Less</Button>
+          )}
+        </div>
       </div>
     </section>
   );

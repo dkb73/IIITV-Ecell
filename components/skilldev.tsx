@@ -57,6 +57,16 @@ const skilldev = () => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-20">
           Skill Development
         </h1>
+        <div className="flex justify-center mb-8">
+          <Image
+            src="/skilldevheader1.jpg"
+            width={600}
+            height={300}
+            alt="SSIP Image"
+            className="rounded-lg"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
         <p className="text-lg md:text-xl lg:text-2xl px-4 md:px-8 lg:px-16 text-justify">
           The Skill Development wing of the Entrepreneurship Cell focuses on
           providing students with the necessary skills and knowledge to succeed

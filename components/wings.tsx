@@ -25,8 +25,7 @@ const Wings = () => {
                 <h3 className="text-2xl font-bold">IRP</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                The Innovation and Research Park (IRP) is our hub for cutting-edge research and development. We provide
-                state-of-the-art facilities and resources to support student-led R&D projects.
+                  Industrial Resource Planning (IRP)  wing of the Entrepreneurship Cell focuses on bridging the gap between academia and industry.
               </p>
               <span className="text-primary hover:underline">Learn More</span>
             </div>
