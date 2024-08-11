@@ -1,0 +1,52 @@
+
+name: Push-to-EC2
+on:
+      push:
+        branches:
+          - master
+         
+jobs:
+      web-deploy:
+        name: Deploy
+        runs-on: ubuntu-latest
+        steps:
+        - name: Get latest code
+          uses: actions/checkout@v2  
+        - name: Use Node.js
+          uses: actions/setup-node@v2-beta
+          with:
+            node-version: '18'
+            check-latest: true
+        - run: rm -rf node_modules/
+        - run: npm install
+        - run: npm run build
+        - run: mkdir build
+        - run: mv .next build
+        
+        # - run: mv middleware.js build/
+        - run: mv package.json build/
+        - run: mv public build/
+        - run: mv next.config.mjs build/
+        - run: mv package-lock.json build/
+        - run: cd build && ls -a
+          env:
+            CI: false  
+        - name: Sync files
+          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+          with:
+            username: ${{ secrets.EC2_USERNAME }} 
+            server: ${{ secrets.EC2_HOST }} 
+            ssh_private_key: ${{ secrets.EC2_PRIVATE_KEY }} 
+            local_path: './build/.'
+            remote_path: '/var/www/html/front'
+            sftpArgs: '-o ConnectTimeout=5'
+        - name: executing remote ssh commands using ssh key
+          uses: appleboy/ssh-action@v1.0.0
+          with:
+            host: ${{ secrets.EC2_HOST }}
+            username: ${{ secrets.EC2_USERNAME }}
+            key: ${{ secrets.EC2_PRIVATE_KEY }}
+            port: '22'
+            script: |
+              cd /var/www/front
+              pm2 reload ProjectName --update-env
