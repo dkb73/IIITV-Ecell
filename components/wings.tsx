@@ -9,14 +9,14 @@ const Wings = () => {
       className="bg-background py-20 md:py-32 mb-14 lg:py-40 border-b border-gray-200"
     >
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-16 text-center">Our Wings</h2>
-      <div className="px-4 md:px-8 lg:px-16"> {/* Added padding to the parent container */}
+      <div className="px-4 md:px-8 lg:px-16"> 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <Link href="/wings-details/#irp" className="bg-background rounded-lg shadow-md p-6">
             <div>
               <div className="flex items-center mb-4">
                 <div className="w-24 h-24 relative mr-4">
                   <Image
-                    src="/irplogo.png" // Replace with the actual path to your IRP logo
+                    src="/irplogo.png" 
                     alt="IRP Logo"
                     layout="fill"
                     objectFit="contain"
@@ -25,8 +25,7 @@ const Wings = () => {
                 <h3 className="text-2xl font-bold">IRP</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                The Innovation and Research Park (IRP) is our hub for cutting-edge research and development. We provide
-                state-of-the-art facilities and resources to support student-led R&D projects.
+                  Industrial Resource Planning (IRP)  wing of the Entrepreneurship Cell focuses on bridging the gap between academia and industry.
               </p>
               <span className="text-primary hover:underline">Learn More</span>
             </div>
@@ -36,7 +35,7 @@ const Wings = () => {
               <div className="flex items-center mb-4">
                 <div className="w-24 h-24 relative mr-4">
                   <Image
-                    src="/ssiplogo.png" // Replace with the actual path to your SSIP logo
+                    src="/ssiplogo.png" 
                     alt="SSIP Logo"
                     layout="fill"
                     objectFit="contain"
@@ -57,7 +56,7 @@ const Wings = () => {
               <div className="flex items-center mb-4">
                 <div className="w-24 h-24 relative mr-4">
                   <Image
-                    src="/incubationlogo.png" // Replace with the actual path to your logo
+                    src="/incubationlogo.png" 
                     alt="Another Logo"
                     layout="fill"
                     objectFit="contain"
@@ -77,7 +76,7 @@ const Wings = () => {
               <div className="flex items-center mb-4">
                 <div className="w-24 h-24 relative mr-4">
                   <Image
-                    src="/skilldevelopmentlogo.png" // Replace with the actual path to your logo
+                    src="/skilldevelopmentlogo.png" 
                     alt="Skill Development Logo"
                     layout="fill"
                     objectFit="contain"
