@@ -13,12 +13,12 @@ const startups = [
     members: [
       {
         image: '/profilesample.jpg',
-        name: 'Isha Patel',
+        name: 'John Doe',
         role: 'IRP Lead',
       },
       {
         image: '/profilesample.jpg',
-        name: 'Arjun Sharma',
+        name: 'John Doe',
         role: 'IRP Associate Lead',
       },
     ],
@@ -30,12 +30,12 @@ const startups = [
     members: [
       {
         image: '/profilesample.jpg',
-        name: 'Rohan Patel',
+        name: 'John Doe',
         role: 'SSIP Lead',
       },
       {
         image: '/profilesample.jpg',
-        name: 'Priya Sharma',
+        name: 'John Doe',
         role: 'SSIP Associate Lead',
       },
     ],
@@ -47,12 +47,12 @@ const startups = [
     members: [
       {
         image: '/profilesample.jpg',
-        name: 'Rohan Patel',
+        name: 'John Doe',
         role: 'SSIP Lead',
       },
       {
         image: '/profilesample.jpg',
-        name: 'Priya Sharma',
+        name: 'John Doe',
         role: 'SSIP Associate Lead',
       },
     ],
@@ -64,12 +64,12 @@ const startups = [
     members: [
       {
         image: '/profilesample.jpg',
-        name: 'Rohan Patel',
+        name: 'John Doe',
         role: 'SSIP Lead',
       },
       {
         image: '/profilesample.jpg',
-        name: 'Priya Sharma',
+        name: 'John Doe',
         role: 'SSIP Associate Lead',
       },
     ],
@@ -81,12 +81,12 @@ const startups = [
     members: [
       {
         image: '/profilesample.jpg',
-        name: 'Rohan Patel',
+        name: 'John Doe',
         role: 'SSIP Lead',
       },
       {
         image: '/profilesample.jpg',
-        name: 'Priya Sharma',
+        name: 'John Doe',
         role: 'SSIP Associate Lead',
       },
     ],
@@ -98,12 +98,12 @@ const startups = [
     members: [
       {
         image: '/profilesample.jpg',
-        name: 'Rohan Patel',
+        name: 'John Doe',
         role: 'SSIP Lead',
       },
       {
         image: '/profilesample.jpg',
-        name: 'Priya Sharma',
+        name: 'John Doe',
         role: 'SSIP Associate Lead',
       },
     ],
@@ -115,12 +115,12 @@ const startups = [
     members: [
       {
         image: '/profilesample.jpg',
-        name: 'Rohan Patel',
+        name: 'John Doe',
         role: 'SSIP Lead',
       },
       {
         image: '/profilesample.jpg',
-        name: 'Priya Sharma',
+        name: 'John Doe',
         role: 'SSIP Associate Lead',
       },
     ],
@@ -175,7 +175,7 @@ const SSIP = () => {
             style={{ aspectRatio: "200/200", objectFit: "cover" }}
           />
           <div className="space-y-2 text-center">
-            <h3 className="text-xl font-bold">Rohan Patel</h3>
+            <h3 className="text-xl font-bold">John Doe</h3>
             <p className="text-muted-foreground">SSIP Lead</p>
           </div>
         </div>
@@ -189,7 +189,7 @@ const SSIP = () => {
             style={{ aspectRatio: "200/200", objectFit: "cover" }}
           />
           <div className="space-y-2 text-center">
-            <h3 className="text-xl font-bold">Priya Sharma</h3>
+            <h3 className="text-xl font-bold">John Doe</h3>
             <p className="text-muted-foreground">SSIP Associate Lead</p>
           </div>
         </div>

@@ -86,7 +86,7 @@ const skilldev = () => {
             style={{ aspectRatio: "150/150", objectFit: "cover" }}
           />
           <div className="space-y-2 text-center">
-            <h3 className="text-lg font-bold">Riya Mehta</h3>
+            <h3 className="text-lg font-bold">John Doe</h3>
             <p className="text-card-foreground">Skill Development Lead</p>
           </div>
         </div>
@@ -100,7 +100,7 @@ const skilldev = () => {
             style={{ aspectRatio: "150/150", objectFit: "cover" }}
           />
           <div className="space-y-2 text-center">
-            <h3 className="text-lg font-bold">Harsh Patel</h3>
+            <h3 className="text-lg font-bold">John Doe</h3>
             <p className="text-card-foreground">
               Skill Development Associate Lead
             </p>

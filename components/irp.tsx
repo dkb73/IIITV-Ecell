@@ -62,10 +62,10 @@ const Irp = () => {
       projectDescription: "A project that addresses a specific industry need.",
       company: "Company A",
       students: [
-        { imgSrc: "/project3.jpg", name: "Isha Patel", role: "IRP Lead" },
+        { imgSrc: "/project3.jpg", name: "John Doe", role: "IRP Lead" },
         {
           imgSrc: "/project2.jpg",
-          name: "Arjun Sharma",
+          name: "John Doe",
           role: "IRP Associate Lead",
         },
       ],
@@ -77,10 +77,10 @@ const Irp = () => {
         "Another project that showcases the capabilities of the IRP wing.",
       company: "Company B",
       students: [
-        { imgSrc: "/project1.jpg", name: "Isha Patel", role: "IRP Lead" },
+        { imgSrc: "/project1.jpg", name: "John Doe", role: "IRP Lead" },
         {
           imgSrc: "/project2.jpg",
-          name: "Arjun Sharma",
+          name: "John Doe",
           role: "IRP Associate Lead",
         },
       ],
@@ -92,10 +92,10 @@ const Irp = () => {
         "A third project that demonstrates the impact of the IRP wing.",
       company: "Company C",
       students: [
-        { imgSrc: "/placeholder.svg", name: "Isha Patel", role: "IRP Lead" },
+        { imgSrc: "/placeholder.svg", name: "John Doe", role: "IRP Lead" },
         {
           imgSrc: "/placeholder.svg",
-          name: "Arjun Sharma",
+          name: "John Doe",
           role: "IRP Associate Lead",
         },
       ],
@@ -106,10 +106,10 @@ const Irp = () => {
       projectDescription: "A project that addresses a specific industry need.",
       company: "Company A",
       students: [
-        { imgSrc: "/project3.jpg", name: "Isha Patel", role: "IRP Lead" },
+        { imgSrc: "/project3.jpg", name: "John Doe", role: "IRP Lead" },
         {
           imgSrc: "/project2.jpg",
-          name: "Arjun Sharma",
+          name: "John Doe",
           role: "IRP Associate Lead",
         },
       ],
@@ -121,10 +121,10 @@ const Irp = () => {
         "Another project that showcases the capabilities of the IRP wing.",
       company: "Company B",
       students: [
-        { imgSrc: "/project1.jpg", name: "Isha Patel", role: "IRP Lead" },
+        { imgSrc: "/project1.jpg", name: "John Doe", role: "IRP Lead" },
         {
           imgSrc: "/project2.jpg",
-          name: "Arjun Sharma",
+          name: "John Doe",
           role: "IRP Associate Lead",
         },
       ],
@@ -136,10 +136,10 @@ const Irp = () => {
         "A third project that demonstrates the impact of the IRP wing.",
       company: "Company C",
       students: [
-        { imgSrc: "/placeholder.svg", name: "Isha Patel", role: "IRP Lead" },
+        { imgSrc: "/placeholder.svg", name: "John Doe", role: "IRP Lead" },
         {
           imgSrc: "/placeholder.svg",
-          name: "Arjun Sharma",
+          name: "John Doe",
           role: "IRP Associate Lead",
         },
       ],
@@ -150,10 +150,10 @@ const Irp = () => {
       projectDescription: "A project that addresses a specific industry need.",
       company: "Company A",
       students: [
-        { imgSrc: "/project3.jpg", name: "Isha Patel", role: "IRP Lead" },
+        { imgSrc: "/project3.jpg", name: "John Doe", role: "IRP Lead" },
         {
           imgSrc: "/project2.jpg",
-          name: "Arjun Sharma",
+          name: "John Doe",
           role: "IRP Associate Lead",
         },
       ],
@@ -165,10 +165,10 @@ const Irp = () => {
         "Another project that showcases the capabilities of the IRP wing.",
       company: "Company B",
       students: [
-        { imgSrc: "/project1.jpg", name: "Isha Patel", role: "IRP Lead" },
+        { imgSrc: "/project1.jpg", name: "John Doe", role: "IRP Lead" },
         {
           imgSrc: "/project2.jpg",
-          name: "Arjun Sharma",
+          name: "John Doe",
           role: "IRP Associate Lead",
         },
       ],
@@ -180,10 +180,10 @@ const Irp = () => {
         "A third project that demonstrates the impact of the IRP wing.",
       company: "Company C",
       students: [
-        { imgSrc: "/placeholder.svg", name: "Isha Patel", role: "IRP Lead" },
+        { imgSrc: "/placeholder.svg", name: "John Doe", role: "IRP Lead" },
         {
           imgSrc: "/placeholder.svg",
-          name: "Arjun Sharma",
+          name: "John Doe",
           role: "IRP Associate Lead",
         },
       ],
@@ -215,7 +215,7 @@ const Irp = () => {
             style={{ aspectRatio: "200/200", objectFit: "cover" }}
           />
           <div className="space-y-2 text-center">
-            <h3 className="text-xl font-bold">Isha Patel</h3>
+            <h3 className="text-xl font-bold">John Doe</h3>
             <p className="text-muted-foreground">IRP Lead</p>
           </div>
         </div>
@@ -229,7 +229,7 @@ const Irp = () => {
             style={{ aspectRatio: "200/200", objectFit: "cover" }}
           />
           <div className="space-y-2 text-center">
-            <h3 className="text-xl font-bold">Arjun Sharma</h3>
+            <h3 className="text-xl font-bold">John Doe</h3>
             <p className="text-muted-foreground">IRP Associate Lead</p>
           </div>
         </div>

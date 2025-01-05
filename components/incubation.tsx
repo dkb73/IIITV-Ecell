@@ -38,7 +38,7 @@ const incubation = () => {
             style={{ aspectRatio: "200/200", objectFit: "cover" }}
           />
           <div className="space-y-2 text-center">
-            <h3 className="text-xl font-bold">Aditya Patel</h3>
+            <h3 className="text-xl font-bold">John Doe</h3>
             <p className="text-black">Incubation Lead</p>
           </div>
         </div>
@@ -52,7 +52,7 @@ const incubation = () => {
             style={{ aspectRatio: "200/200", objectFit: "cover" }}
           />
           <div className="space-y-2 text-center">
-            <h3 className="text-xl font-bold">Neha Gupta</h3>
+            <h3 className="text-xl font-bold">John Doe</h3>
             <p className="text-black">Incubation Associate Lead</p>
           </div>
         </div>
