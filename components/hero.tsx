@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-8">
             The E-Cell is dedicated to fostering a vibrant entrepreneurial
-            ecosystem on campus.
+            ecosystem on it's campus.
           </p>
           <a href="#contact">
             <Button text="Contact Us" />
