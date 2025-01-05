@@ -1,24 +1,41 @@
 "use client";
 
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 
 const ContactUs = () => {
   const form = useRef<HTMLFormElement>(null);
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);  // To manage the loading state
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true); // Set loading state to true
 
     const serviceId: string = 'service_jk4z89c';
     const templateId: string = 'template_3erda9d'; // Updated with your actual template ID
     const userId: string = 'fN1w_YVgmri8rQteK'; // Updated with your actual user ID
 
+    const formData = new FormData(form.current!);  // Create FormData to extract values
+
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
     if (form.current !== null) {
       emailjs.sendForm(serviceId, templateId, form.current, userId)
         .then((result: any) => {
           console.log(result.text);
+          setIsSubmitted(true);  // Set submission status to true
+          setIsSubmitting(false); // Set loading state to false
+
+          // Clear the form fields after successful submission
+          if (form.current) {
+            form.current.reset();
+          }
         }, (error: any) => {
           console.log(error.text);
+          setIsSubmitting(false); // Set loading state to false
         });
     }
   };
@@ -42,10 +59,15 @@ const ContactUs = () => {
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
                 <textarea id="message" name="message" placeholder="Enter your message" rows={5} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"></textarea>
               </div>
-              <button type="submit" className="w-full bg-primary text-gray-700 py-2 px-4 rounded-md shadow-sm hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
-                Submit
+              <button type="submit" className="w-full bg-primary text-gray-700 py-2 px-4 rounded-md shadow-sm hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" disabled={isSubmitting}>
+                {isSubmitting ? "Submitting..." : "Submit"}
               </button>
             </form>
+            {isSubmitted && (
+              <div className="mt-4 text-green-500 text-center">
+                <p>Submitted successfully! We will get back to you soon.</p>
+              </div>
+            )}
           </div>
           <div className="bg-background rounded-lg shadow-lg p-6">
             <h3 className="text-xl font-bold mb-4">Get in Touch</h3>
