@@ -6,6 +6,12 @@
 
 A modern web platform showcasing the Entrepreneurship Cell of IIIT Vadodara. This project demonstrates the structure, achievements, and initiatives of IIITV's E-Cell, providing comprehensive information about our organization's past projects, successful startups, and various wings.
 
+## 🌐 Live Demo
+
+Experience the live version of the website deployed on Vercel: [E-Cell IIITV Website](https://iiitv-ecell-hm8o6voy5-dhwananbt1-gmailcoms-projects.vercel.app/)
+
+The deployment is automatically updated with the latest changes from the main branch, ensuring you always see the most recent version of our platform. Feel free to explore the various sections and features we've implemented.
+
 ## 🚀 Features
 
 - **Interactive UI Components**: Built with Framer Motion and MUI for smooth animations and modern design
@@ -47,14 +53,18 @@ EcellWeb/
 
 ## 🚀 Getting Started
 
+You can use any of the following package managers to set up the project. Choose the one you're most comfortable with:
+
+### Using npm
+
 1. **Clone the repository**
    ```bash
    git clone https://github.com/[your-username]/EcellWeb.git
+   cd EcellWeb
    ```
 
 2. **Install dependencies**
    ```bash
-   cd EcellWeb
    npm install
    ```
 
@@ -63,7 +73,83 @@ EcellWeb/
    npm run dev
    ```
 
-4. **Open [http://localhost:3000](http://localhost:3000) in your browser**
+### Using Yarn
+
+1. **Clone and enter the project directory**
+   ```bash
+   git clone https://github.com/[your-username]/EcellWeb.git
+   cd EcellWeb
+   ```
+
+2. **Install Yarn if you haven't already**
+   ```bash
+   npm install -g yarn
+   ```
+
+3. **Install dependencies**
+   ```bash
+   yarn install
+   ```
+
+4. **Run the development server**
+   ```bash
+   yarn dev
+   ```
+
+### Using pnpm
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/[your-username]/EcellWeb.git
+   cd EcellWeb
+   ```
+
+2. **Install pnpm if you haven't already**
+   ```bash
+   npm install -g pnpm
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
+
+4. **Run the development server**
+   ```bash
+   pnpm dev
+   ```
+
+### Using Bun
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/[your-username]/EcellWeb.git
+   cd EcellWeb
+   ```
+
+2. **Install Bun if you haven't already**
+   ```bash
+   curl -fsSL https://bun.sh/install | bash
+   ```
+
+3. **Install dependencies**
+   ```bash
+   bun install
+   ```
+
+4. **Run the development server**
+   ```bash
+   bun dev
+   ```
+
+For all package managers, once the development server is running, open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+### Additional Setup Notes
+
+- Node.js version 20.15.0 or higher is recommended
+- Make sure you have Git installed on your system
+- The development server typically takes a few seconds to start up
+- You may need to install additional global dependencies depending on your system
 
 ## 🧩 Components
 
