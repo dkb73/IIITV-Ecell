@@ -8,7 +8,7 @@ A modern web platform showcasing the Entrepreneurship Cell of IIIT Vadodara. Thi
 
 ## 🌐 Live Demo
 
-Experience the live version of the website deployed on Vercel: [E-Cell IIITV Website](https://iiitv-ecell-hm8o6voy5-dhwananbt1-gmailcoms-projects.vercel.app/)
+Experience the live version of the website deployed on Vercel: [E-Cell IIITV Website](https://iiitv-ecell.vercel.app/)
 
 The deployment is automatically updated with the latest changes from the main branch, ensuring you always see the most recent version of our platform. Feel free to explore the various sections and features we've implemented.
 
