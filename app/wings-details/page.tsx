@@ -5,6 +5,7 @@ import Incubation from '@/components/incubation';
 import Skilldev from '@/components/skilldev';
 import FloatingNav from '@/components/ui/FloatingNax';
 import { navItems } from "@/data";
+import Footer from '@/components/footer';
 
 const WingsDetails = () => {
   return (
@@ -16,6 +17,7 @@ const WingsDetails = () => {
             <Ssip/>
             <Incubation/>
             <Skilldev/>
+            {/* <Footer /> */}
           </div>
       </main>
     </div>
@@ -23,3 +25,4 @@ const WingsDetails = () => {
 };
 
 export default WingsDetails;
+
