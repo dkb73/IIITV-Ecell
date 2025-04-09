@@ -1,6 +1,5 @@
 # E-Cell IIITV Website
 
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 ![Next.js](https://img.shields.io/badge/Next.js-14.2.5-black)
 ![Node](https://img.shields.io/badge/Node-v20.15.0-green)
 
@@ -163,9 +162,6 @@ The project includes several key components:
 - `ContactUs`: Email integration form
 - And many more specialized components for different sections
 
-## 📄 License
-
-This project is licensed under the GNU Affero General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributing
 
