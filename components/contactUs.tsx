@@ -12,9 +12,9 @@ const ContactUs = () => {
     e.preventDefault();
     setIsSubmitting(true); // Set loading state to true
 
-    const serviceId: string = 'service_jk4z89c';
-    const templateId: string = 'template_3erda9d'; // Updated with your actual template ID
-    const userId: string = 'fN1w_YVgmri8rQteK'; // Updated with your actual user ID
+    const serviceId: string = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '';
+    const templateId: string = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '';
+    const userId: string = process.env.NEXT_PUBLIC_EMAILJS_USER_ID || '';
 
     const formData = new FormData(form.current!);  // Create FormData to extract values
 

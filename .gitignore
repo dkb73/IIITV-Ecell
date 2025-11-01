@@ -28,6 +28,17 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# Docker
+# Production environment files (may contain secrets)
+.env.production
+.env.development
+.env
+# Docker Compose override files (local customizations)
+docker-compose.override.yml
+# Docker volume data (if you create local volumes)
+docker-data/
+
+
 # vercel
 .vercel
 

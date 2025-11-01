@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  # Main Next.js application
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ecellweb-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    # Configure DNS for runtime (if needed)
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4

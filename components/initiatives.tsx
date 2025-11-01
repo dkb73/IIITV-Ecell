@@ -80,7 +80,7 @@ const Initiatives = () => {
   ];
 
   return (
-    <section id="initiatives" className="bg-background py-10 md:py-16 lg:py-20 mb-14">
+    <section id="initiatives" className="bg-background py-10 md:py-16 lg:py-20 mb-14 border-8 rounded-lg">
       <div className="container mx-auto px-6 md:px-8 lg:px-10">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">
           Our Initiatives
